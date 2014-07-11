@@ -14,5 +14,8 @@ class entrance(models.Model):
         cave = models.ForeignKey('cave')
         location = models.PointField(srid=4326)
         def __str__(self):              # __unicode__ on Python 2
-                return self.cave
+		if not self.name:
+	                return self.cave.name
+		else:
+			return self.name
 
