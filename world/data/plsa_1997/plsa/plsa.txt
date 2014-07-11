@@ -1,0 +1,134 @@
+  LIBRARY       : COUNTY
+  LAYER NAME    : PLS
+  COVERAGE NAME : PLSA
+
+  COVERAGE DESCRIPTION: 
+  
+  The 'PLS' layer is a polygon coverage depicting the  
+  township, range and sections contained in the Public Land  
+  Survey System grid for the State of California. Townships  
+  are roughly six miles square, and are numbered north and  
+  south from an established baseline. Likewise, ranges are  
+  numbered east and west from an established meridian.  
+  California uses three baseline/meridians, these being   
+  Humboldt, Mt. Diablo, and San Bernardino, abbreviated HB&M, 
+  MDB&M, and SBB&M. Township and range values are combined in 
+  the redefined item TOWN-RANGE to facilitate dissolve and  
+  dropline functions.
+  
+  Many places in the State are not gridded into sections. Most 
+  of these cases involve Spanish and Mexican landgrant areas  
+  that were honored by the government of the United States  
+  when California became a State, and were subsequently  
+  excluded from the section survey process. Names of   
+  landgrants may be found under the item LANDGRANT. Other  
+  areas were not sectioned because of difficulties in   
+  surveying wetlands and mountainous terrain. These areas are 
+  identified in the item COMMENTS as 'wetlands' or 'not  
+  sectioned'.
+  
+  The PLS layer can be of help in defining position and scale 
+  on small-scale plots. It is of course irreplaceable if the  
+  user is locating other features by means of    
+  township/range/section identifiers. There is also a centroid 
+  (point) coverage available that is not in the library. This 
+  represents each section as a point and carries all the  
+  township/range/section info as well as X and Y coordinates.
+  
+  VITAL STATISTICS:
+  
+  Datum:                       NAD 27
+  Projection:                  Albers
+  Units:                       Meters
+  1st Std. Parallel:           34 00 00 (34.0 degrees N)
+  2nd Std. Parallel:           40 30 00 (40.5 degrees N)
+  Longitude of Origin:         -120 00 00 (120.0 degrees W)
+  Latitude of Origin:          00 00 00 (0.0 degrees)
+  False Easting (X shift):     0
+  False Northing (Y shift):    -4,000,000
+  Source:                      US Geological Survey
+  Source Media:                Magnetic tape (digital file); mylar maps 
+  Source Projection:           Geographic (latitude/longitude)
+  Source Units:                Degrees minutes seconds
+  Source Scale:                1:100,000
+  Capture Method:              Scanned/digitized 
+  Conversion Software:         ARC/INFO rev. 5.0.1 
+  Data Structure:              Vector 
+  
+  ARC/INFO Coverage Type:      Polygon
+  ARC/INFO Precision:          Single
+  ARC/INFO Tolerances:         1 meter
+  Number of Features:          146,151
+  Layer Size:                  74.904 MB
+  Data Updated:                November 1993
+                               (Coding errors corrected in
+                                5 counties)
+
+  DATA DICTIONARY:
+  
+      DATAFILE NAME: PLSA.PAT
+      RECORD LENGTH:     138
+  
+  COLUMN   ITEM NAME     WIDTH    OUTPUT   TYPE     N.DEC 
+  -------------------------------------------------------------
+
+    1      AREA              4       12      F        3 
+    5      PERIMETER         4       12      F        3 
+    9      PLSA#             4        5      B        -
+   13      PLSA-ID           4        5      B        -
+   17      SECTION           2        2      I        -
+   19      MERIDIAN         10       10      C        -
+   29      TOWNSHIP          5        5      C        -
+   34      RANGE             5        5      C        -
+   39      SOURCE           15       15      C        -
+   54      COMMENT          25       25      C        -
+   79      LANDGRANT        60       60      C        -
+      **  REDEFINED ITEMS  **
+   29  TOWN-RANGE           10       10      C        -
+
+  AREA      : The area of the polygon in square coverage units.
+
+  PERIMETER : The length of the polygon perimeter of the polygon
+              in coverage units.
+
+  PLSA#     : The software-assigned unique integer identification 
+              number.
+
+  PLSA-ID   : A user-assigned identification number.
+
+  SECTION:     Section number (less than 36)
+  
+  MERIDIAN:    Name of the baseline and meridian
+  
+  TOWNSHIP:    Township number and ordinal direction  
+               (N  =  north, S = south)
+  
+  RANGE:       Range number and ordinal direction
+               (E=east,  W=west)
+  
+  SOURCE:      Unused at this time. 
+  
+  COMMENT:     Description of the polygon if not a surveyed  
+               section or landgrant. 
+  
+  LANDGRANT:   Name of the landgrant, if any.
+
+  TOWN-RANGE:  Concatenation of Township followed by Range.
+
+
+  DATA QUALITY ASSESSMENT:
+  
+  The following are subjective comments regarding this data.
+  
+  The layer is as complete as the USGS 100K quad sheets. The 
+  PLS coverage does not include 'projected' sections into  
+  landgrant, wetland, or unsectioned areas. The feature  
+  accuracy is good and attribute accuracy is very good. It 
+  also has all pertinent section information.
+  
+  DATA CONTACT:
+  
+  Contact Name: Ray McDowell
+  Contact's Phone: 916-654-9990
+
+  DOCUMENTATION DATES: 1/1997, 10/28/1997

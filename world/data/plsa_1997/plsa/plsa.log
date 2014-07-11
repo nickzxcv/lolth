@@ -1,0 +1,13 @@
+199610071735   0     0     0rewers EXTRACT PLS User=REWERS
+199610081316  10    31     0sflatt copy plsa /callib/statewide/plssadir/plsa
+19970624 712   4    32     0rewers copy /callib1/statewide/plssadir/plsa plsa
+19970624 754   0     0     0rewers ARCEDIT /TEMP9/PLSTEMP/PLSA
+19970624 808  14   482     0rewers build plsa poly
+19970624 854   5    33     0sflatt copy /temp9/plstemp/plsa /callib1/statewide/plssadir/plsa
+199710161646  19  1014     0rewers export cover /callib1/statewide/plssadir/plsa plsa none
+199806251400   2   145     0sflatt export cover /callib/statewide/plssadir/plsa plsa
+199902161627   2    71     0sflatt index plsa
+199912061529   3    10     0andy copy \\giserv.gislab.teale.ca.gov\callib\statewide/plssadir/plsa plsst
+19991207 930   0     6   109sflatt copy /proj/dwr/pls_dir/plsst /callib/statewide/plssadir/plsa
+200106281321   0     2     0will copy plsa ..\plsa
+200106281324   1    65     0will export cover plsa e:\sw\dist\plsa\plsa full

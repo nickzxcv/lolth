@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="http://gis.ca.gov/fgdc_esri.xsl"?>
+<metadata xmlns:casil="http://gis.ca.gov/" 
+	  xml:lang="en" 
+casil:resource="http://gis.ca.gov/catalog/BrowseRecord.epl?id=298">
+  <idinfo>
+    <citation>
+      <citeinfo>
+	<origin>Teale GIS Solutions Group</origin>
+	<pubdate>1997-01-01</pubdate>
+	<edition></edition>
+	<title>Public Land Survey System</title>
+	<geoform></geoform>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>The 'PLS' layer is a polygon coverage depicting the township, range and sections contained in the Public Land Survey System grid for the State of California. Townships are roughly six miles square, and are numbered north and south from an established baseline. Likewise, ranges are numbered east and west from an established meridian. California uses three baseline/meridians, these being Humboldt, Mt. Diablo, and San Bernardino, abbreviated HB&amp;M, MDB&amp;M, and SBB&amp;M. Township and range values are combined in the redefined item TOWN-RANGE to facilitate dissolve and dropline functions.</abstract>
+      <purpose>To provide information about public land use for the state of California.</purpose>
+      <supplinf>Many places in the State are not gridded into sections. Most of these cases involve Spanish and Mexican landgrant areas that were honored by the government of the United States when California became a State, and were subsequently excluded from the section survey process. Names of landgrants may be found under the item LANDGRANT. Other areas were not sectioned because of difficulties in surveying wetlands and mountainous terrain. These areas are identified in the item COMMENTS as 'wetlands' or 'not sectioned'. The PLS layer can be of help in defining position and scale on small-scale plots. It is of course irreplaceable if the user is locating other features by means of township/range/section identifiers. There is also a centroid (point) coverage available that is not in the library. This represents each section as a point and carries all the township/range/section info as well as X and Y coordinates.</supplinf>
+      <langdata>English</langdata></descript>
+    <timeperd>
+      <timeinfo>
+	<rngdates><begdate>1997-01-01</begdate>
+<enddate>1997-12-31</enddate></rngdates>
+    </timeinfo>
+      <current>Publication Date</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update></update>
+    </status>
+    <spdom>
+      <bounding>
+	<westbc>-124.0000</westbc>
+	<eastbc>-114.0000</eastbc>
+	<northbc>42.0000</northbc>
+	<southbc>32.0000</southbc>
+      </bounding>
+      <lboundng>
+ <leftbc></leftbc><rightbc></rightbc><bottombc></bottombc><topbc></topbc></lboundng></spdom>
+    <keywords>
+	<theme><themekey>Public Land Survey System</themekey></theme>
+	<place><placekey>California</placekey></place>
+    </keywords>
+    <accconst>No Restrictions</accconst>
+    <useconst>No Redistribution</useconst>
+    <native></native>
+    <natvform></natvform></idinfo>
+    <ptcontac>
+      <cntinfo>
+	<cntorgp>
+	  <cntorg>California Environmental Resources Evaluation System (CERES)</cntorg>
+	  <cntper>Ray McDowell</cntper>
+	</cntorgp>
+	<cntaddr>
+	  <addrtype>mailing</addrtype>
+	  <address>California Environmental Resources Evaluation System (CERES)</address>
+	  <city></city>
+	  <state></state>
+	  <postal></postal>
+	</cntaddr>
+	<cntvoice>(916) 654-9990</cntvoice>
+	<cntemail>ray@ceres.ca.gov</cntemail>
+      </cntinfo>
+    </ptcontac>
+  <spdoinfo>
+    <direct></direct>
+    <ptvctinf>
+      <sdtsterm Name="arc">
+	<sdtstype></sdtstype>
+	<ptvctcnt></ptvctcnt>
+      </sdtsterm>
+      <sdtsterm Name="label">
+	<sdtstype></sdtstype>
+	<ptvctcnt></ptvctcnt>
+      </sdtsterm>
+      <sdtsterm Name="polygon">
+	<sdtstype></sdtstype>
+	<ptvctcnt></ptvctcnt>
+      </sdtsterm>
+      <sdtsterm Name="tic">
+	<sdtstype></sdtstype>
+	<ptvctcnt></ptvctcnt>
+      </sdtsterm>
+      <sdtsterm Name="annotation">
+	<sdtstype></sdtstype>
+	<ptvctcnt></ptvctcnt>
+      </sdtsterm>
+</ptvctinf>
+  </spdoinfo>
+  <spref>
+    <horizsys>
+      <planar>
+	<planci>
+	  <plance></plance>
+	  <coordrep>
+	    <absres></absres>
+	    <ordres></ordres>
+	  </coordrep>
+	  <plandu></plandu>
+	</planci>
+	<mapproj><mapprojn></mapprojn><albers><stdparll></stdparll><longcm></longcm><feast></feast><fnorth></fnorth></albers></mapproj></planar>
+      <geodetic>
+	<horizdn></horizdn>
+	<ellips></ellips>
+	<semiaxis></semiaxis>
+	<denflat></denflat>
+      </geodetic>
+      <cordsysn><geogcsn></geogcsn><projcsn></projcsn></cordsysn></horizsys>
+  </spref>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+	<cntorgp>
+	  <cntorg>California Environmental Resources Evaluation System (CERES)</cntorg>
+	  <cntper>Ray McDowell</cntper>
+	</cntorgp>
+	<cntaddr>
+	  <addrtype>mailing</addrtype>
+	  <address>California Environmental Resources Evaluation System (CERES)</address>
+	  <city></city>
+	  <state></state>
+	  <postal></postal>
+	</cntaddr>
+	<cntvoice>(916) 654-9990</cntvoice>
+	<cntemail>ray@ceres.ca.gov</cntemail>
+      </cntinfo>
+    </distrib>
+    <stdorder>
+      <digform>
+	<digtinfo>
+	  <formname>ARCE</formname>
+	  <filedec></filedec>
+	  <transize>74.904</transize>
+	  <dssize></dssize></digtinfo>
+	<digtopt>
+	  <onlinopt>
+	    <computer>
+	      <networka>
+		<networkr>http://gis.ca.gov/download.epl?catalog=casil&amp;data_title=Public Land Survey System&amp;name=plsa</networkr>
+	      </networka>
+	    </computer>
+	    <accinstr></accinstr>
+	  </onlinopt>
+	</digtopt>
+      </digform>
+    </stdorder>
+  </distinfo>
+  <metainfo>
+    <metd>1997-12-24</metd>
+    <metc>
+      <cntinfo>
+	<cntorgp>
+	  <cntorg>California Environmental Resources Evaluation System (CERES)</cntorg>
+	  <cntper>Ray McDowell</cntper>
+	</cntorgp>
+	<cntaddr>
+	  <addrtype>mailing</addrtype>
+	  <address>California Environmental Resources Evaluation System (CERES)</address>
+	  <city></city>
+	  <state></state>
+	  <postal></postal>
+	</cntaddr>
+	<cntvoice>(916) 654-9990</cntvoice>
+	<cntemail>ray@ceres.ca.gov</cntemail>
+      </cntinfo>
+    </metc>
+    <metstdn></metstdn>
+    <metstdv></metstdv>
+    <mettc></mettc>
+    <metextns>
+      <onlink></onlink>
+      <metprof></metprof>
+    </metextns>
+    <langmeta></langmeta></metainfo>
+</metadata>
+
+
+
+
+
+
+
+
+

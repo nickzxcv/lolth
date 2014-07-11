@@ -1,0 +1,30 @@
+Public Land Survey System
+=========================
+
+The 'PLS' layer is a polygon coverage depicting the township, range 
+and sections contained in the Public Land Survey System grid for the 
+State of California. Townships are roughly six miles square, and are 
+numbered north and south from an established baseline. Likewise, 
+ranges are numbered east and west from an established meridian. 
+California uses three baseline/meridians, these being Humboldt, Mt. 
+Diablo, and San Bernardino, abbreviated HB&M, MDB&M, and SBB&M. 
+Township and range values are combined in the redefined item 
+TOWN-RANGE to facilitate dissolve and dropline functions.
+
+TEALE Data Products
+===================
+
+Starting July 1, 2001 some of California's physical and cultural
+geospatial information, formerly distributed by the Teale Data Center,
+is being distributed to the public by the California Mapping
+Coordinating Committee through servers at the California Environmental
+Resources Evaluation System (CERES) in the Resources Agency and
+National Aeronautics and Space Administration (NASA) Ames Research
+Center.
+
+There are no plans to actively maintain the currentness of these data
+products.  In fact, updates to these data typically result in the
+creation of new data products, and is not represented as changes to
+these data.  These data should be considered a snapshot of data as
+existed typically in the early and mid nineties.
+
