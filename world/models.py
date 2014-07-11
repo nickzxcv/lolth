@@ -58,3 +58,16 @@ class quad24(models.Model):
     def __str__(self):              # __unicode__ on Python 2
         return self.quad24name
 
+class caves(models.Model):
+	name = models.CharField(max_length=80)
+	aka = models.ForeignKey('self')
+	def __str__(self):              # __unicode__ on Python 2
+		return self.name
+
+class entrances(models.Model):
+	name = models.CharField(max_length=80)
+	cave_id = models.ForeignKey('caves')
+	location = models.PointField(srid=4326)
+	def __str__(self):              # __unicode__ on Python 2
+		return self.name
+
