@@ -11,7 +11,7 @@ class cave(models.Model):
 
 class entrance(models.Model):
         name = models.CharField(max_length=80)
-        cave_id = models.ForeignKey('caves')
+        cave_id = models.ForeignKey('cave')
         location = models.PointField(srid=4326)
         def __str__(self):              # __unicode__ on Python 2
                 return self.name
