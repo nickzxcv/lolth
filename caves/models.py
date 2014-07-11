@@ -5,12 +5,12 @@ from django.contrib.gis.db import models
 
 class cave(models.Model):
         name = models.CharField(max_length=80)
-        aka = models.ForeignKey('self')
+        aka = models.ForeignKey('self', null=True, blank=True)
         def __str__(self):              # __unicode__ on Python 2
                 return self.name
 
 class entrance(models.Model):
-        name = models.CharField(max_length=80)
+        name = models.CharField(max_length=80, null=True, blank=True)
         cave_id = models.ForeignKey('cave')
         location = models.PointField(srid=4326)
         def __str__(self):              # __unicode__ on Python 2
