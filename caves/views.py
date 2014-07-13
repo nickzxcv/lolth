@@ -5,7 +5,7 @@ from world.models import cnty24k09, plsa_1997, quad24
 def index(request):
 	return HttpResponse("Hello, world. You're at the cave index.")
 
-def detail(request, cave_id):
+def name(request, cave_id):
 	mycave=cave.objects.get(pk=cave_id)
 	response="{} ".format(mycave)
 
