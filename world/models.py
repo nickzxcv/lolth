@@ -14,8 +14,7 @@ class cnty24k09(models.Model):
     shape_area = models.FloatField()
     geom = models.MultiPolygonField(srid=4326)
     objects = models.GeoManager()
-    # Returns the string representation of the model.
-    def __str__(self):              # __unicode__ on Python 2
+    def __str__(self):
         return self.name_pcase
 
 class plsa_1997(models.Model):
@@ -33,6 +32,8 @@ class plsa_1997(models.Model):
     town_range = models.CharField(max_length=10)
     geom = models.MultiPolygonField(srid=4326)
     objects = models.GeoManager()
+    def __str__(self):
+        return "S.{}, T{} R{}".format(self.section, self.township, self.range)
 
 class quad24(models.Model):
     quad24_id = models.IntegerField()
@@ -54,7 +55,6 @@ class quad24(models.Model):
     cell = models.CharField(max_length=2)
     geom = models.MultiPolygonField(srid=4326)
     objects = models.GeoManager()
-    # Returns the string representation of the model.
-    def __str__(self):              # __unicode__ on Python 2
+    def __str__(self):
         return self.quad24name
 
