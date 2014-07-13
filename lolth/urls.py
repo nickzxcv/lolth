@@ -1,7 +1,10 @@
-from django.conf.urls import url, include
+from django.conf.urls import url, patterns, include
 from django.contrib.gis import admin
+
+from caves import views
 admin.autodiscover()
 
-urlpatterns = [
-    url(r'^admin/', include(admin.site.urls)),
-    ]
+urlpatterns = patterns('',
+	url(r'^admin/', include(admin.site.urls)),
+	url(r'^caves/', include('caves.urls')),
+)
