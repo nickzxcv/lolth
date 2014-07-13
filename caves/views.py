@@ -22,6 +22,7 @@ def name(request, cave_id):
 
 def entrances(request, cave_id):
 	mycave=cave.objects.get(pk=cave_id)
+	response="{}: ".format(mycave)
 	entrancelist=entrance.objects.filter(cave=mycave.id)
 
 	for caveentrance in entrancelist:
